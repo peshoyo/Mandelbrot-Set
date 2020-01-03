@@ -11,7 +11,7 @@ public class TheThread extends Thread{
 	private int FROM_WIDTH = 0;
 	private int TO_WIDTH= 0;
 	
-	int[][] SET= new int[WIDTH][HEIGHT];
+	int[][] SET = new int[WIDTH][HEIGHT];
 	
 	TheThread(int id, int width,int height, int fwidth, int twidth, int[][] set){
     	this.id = id;
