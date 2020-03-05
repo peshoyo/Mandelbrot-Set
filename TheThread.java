@@ -30,7 +30,7 @@ public class TheThread extends Thread{
 				double cr = (4.0 * i - 2 * WIDTH) / WIDTH;
 				double ci = (4.0 * j - 2 * HEIGHT) / HEIGHT;
 				
-				Complex Zc = new Complex(cr,ci);
+				Complex Zc = new Complex(cr, ci);
 				Complex Zn = new Complex(0, 0);
 				Complex Ze = new Complex(Math.E);
 				
@@ -38,14 +38,11 @@ public class TheThread extends Thread{
 	            while (k < MAX_ITERATIONS && Zn.abs() < RADIUS ) {
 
 	                Zn = Zn.multiply(Zn).add(Zc);
-	                //Zn = Ze.pow(Zn);
-	                
-
+	              //Zn = Ze.pow(Zn);
 	                k++;
 	            }
 
 	            SET[i][j] = k;
-				
 				
 			}
 		}
