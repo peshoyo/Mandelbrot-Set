@@ -35,14 +35,14 @@ public class TheThread extends Thread{
 				Complex Ze = new Complex(Math.E);
 				
 				int k = 0;
-	            while (k < MAX_ITERATIONS && Zn.abs() < RADIUS ) {
+	            		while (k < MAX_ITERATIONS && Zn.abs() < RADIUS ) {
 
-	                Zn = Zn.multiply(Zn).add(Zc);
-	              //Zn = Ze.pow(Zn);
-	                k++;
-	            }
+	                		Zn = Zn.multiply(Zn).add(Zc);
+	              			//Zn = Ze.pow(Zn);
+	                		k++;
+	            		}
 
-	            SET[i][j] = k;
+	            		SET[i][j] = k;
 				
 			}
 		}
